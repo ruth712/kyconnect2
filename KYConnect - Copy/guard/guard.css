@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+
+/* Sidebar */
+aside {
+    z-index: 100;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 12rem;
+    background-color: rgb(10, 10, 10);
+}
+.side a,div,p{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+.pfp-display-large{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding: 1.4rem 1.5rem;
+}
+.pfp-container-large{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.pfp-container-large img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.side-student-name{
+    padding-left: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Sidebar Navigation */
+.btn-container{
+    padding-top: 0.6rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+.btn-container a{
+    text-decoration: none;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 100%;
+    padding: 0 0.8rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px black inset;
+    transition: background-color 0.15s;
+}
+.btn-container a:hover{
+    background-color: rgba(30, 30, 30, 0.5);
+}
+.btn-container a:active{
+    background-color: rgba(30, 30, 30, 0.2);
+}
+
+
+/* Header Display */
+header{
+    position: fixed;
+    top: 0;
+    left: 12rem;
+    right: 0;
+    height: 3rem;
+    background-color: rgb(0, 18, 84);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.pfp-display-small{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    right: 1rem;
+}
+.pfp-container-small{
+    width: 35px;
+    height: 35px;
+}
+.pfp-container-small img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.head-student-name{
+    display: flex;
+    background-color: rgb(228, 228, 228);
+    width: 12rem;
+    margin-left: 1rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+
+/* Main Panel */
+.main-grid{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    top: 5rem;
+    left: 12rem;
+    right: 0;
+    bottom: 0;
+}
+
+.card-grid{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    width: 70%;
+    height: 20rem;
+    padding: 2rem;
+    margin: 3rem 0 1.5rem 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-top-left{
+    background-color: rgb(66, 67, 68);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-bot-left{
+    background-color: rgb(230, 123, 17);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.card-bot-right{
+    background-color: gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}  
+
+
+
+
+.text{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.3rem;
+    place-items: center;
+}
+.text h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+.text p{
+    font-size: 30px;
+}
+.text a{
+    text-decoration: none;
+    color: black;
+    background-color: whitesmoke;
+    padding: 0.2rem 7rem;
+    border-radius: 20px;
+}
+.text a:hover{
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.5) inset;
+}
+.text a:active{
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.8) inset;
+}
+.text-top, .text-bot .pending-top .pending-bot .accepted-bot .accepted-top .rejected-top .rejected-bot{
+    height: 50%;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.text-top{
+    background-color: rgb(192, 189, 189);
+    color: black;
+    border-radius: 10px 10px 0 0;
+}
+
+.text-bot{
+    background-color: rgb(228, 228, 228);
+    color: black;
+    border-radius: 0 0 10px 10px;
+}
+
+.card-top-right{
+    background-color: rgb(196, 195, 195);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.pending-top{
+    background-color: orange;
+    border-radius: 10px 10px 0 0;
+}
+.accepted-top{
+    background-color: green;
+    border-radius: 10px 10px 0 0;
+}
+.rejected-top{
+    background-color: red;
+    border-radius: 10px 10px 0 0;
+}
+
+.pending-bot .accepted-bot .rejected-bot {
+    background-color: rgb(228, 228, 228);
+    color: black;
+    border-radius: 0 0 10px 10px;
+}
+
+
+
+
+
+
+
+/* Bottom Card */
+.card-bot{
+    width: 80%;
+    padding: 2rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5) inset;
+    border-radius: 10px;
+    height: 15rem;
+    display: grid;
+    grid-template-rows: 2rem 1fr;
+}
+.card-bot-wrap{
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 15rem;
+    overflow: hidden;
+}
+.card-bot-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(39, 72, 191);
+    border-radius: 10px 10px 0 0;
+    height: 2rem;
+}

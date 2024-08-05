@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Dashboard</title>
+        <meta name="viewport" content="width=device-width", initial-scale-1.0>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="st_dashboard.css">
+        <script defer src="student.js"></script>
+    </head>
+    <body>
+        <aside class="side sidebar">
+            <section class="pfp-display-large">
+                <figure class="pfp-container-large">
+                    <img src="icons/default-pfp-icon.jpg" alt="">
+                </figure>
+                <div class="side-student-name">Student Name</div>
+            </section>
+            <nav class="side btn-container">
+                <a href="https://ruth712.github.io/kyconnect/Student%20Interface/st_dashboard.html">Dashboard</a>
+                <a href="https://ruth712.github.io/kyconnect/Student%20Interface/st_outing.html">Outing Report</a>
+                <a href="https://ruth712.github.io/kyconnect/Student%20Interface/st_prof_setting.html">Profile Settings</a>
+                <button data-modal-target="#logout-card" class="logout-btn">Log out</button>
+                    <div class="logout-card" id="logout-card">
+                        <h1>Do you want to log out?</h1>
+                        <p>Ensure all EXEAT applications are submitted a minimum of 2 days prior to the date of leave.</p>
+                        <div class="button-wrapper">
+                            <button class="yes-btn">YES</button>
+                            <button data-close-button class="no-btn">NO</button>
+                        </div>
+                    </div>
+                    <div id="overlay"></div>            
+            </nav>
+        </aside>
+        <header>
+            <section class="pfp-display-small">
+                <figure class="pfp-container-small">
+                    <img src="icons/default-pfp-icon.jpg" alt="">
+                </figure>
+                <div class="head-student-name">Student Name</div>
+            </section>
+        </header>
+        <main>
+            <section class="main-grid">
+                <section class="card-grid">
+                    <section class="card-top-left">
+                        <div class="total-outing">
+                            <h1>Total Outings</h1>
+                            <p>20</p>
+                            <a href="">OUTING REPORT</a>
+                        </div>
+                    </section>
+                    <section class="card-top-right">
+                        <div class="ctr-top">ACCEPTED</div>
+                        <div class="ctr-bot">DD/MM/YY</div>
+                    </section>   
+                </section>
+                <section class="card-bot">
+                    <div class="card-bot-wrap">
+                        <div class="card-bot-header">APPLICATION GUIDELINE</div>
+                        <div class="app-guideline">
+                            <div class="guideline-num">
+                                <p>1</p>
+                                <p>2</p>
+                                <p>3</p>
+                                <p>4</p>
+                                <p>5</p>
+                                <p>6</p>
+                            </div>
+                            <div class="guideline-content">
+                                <p>Lorem ipsum dolor sit amet. Et commodi veritatis sit voluptate eius quo autem minima id omnis nihil nam voluptatem consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet. Et commodi veritatis sit voluptate eius quo autem minima id omnis nihil nam voluptatem consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet. Et commodi veritatis sit voluptate eius quo autem minima id omnis nihil nam voluptatem consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet. Et commodi veritatis sit voluptate eius quo autem minima id omnis nihil nam voluptatem consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet. Et commodi veritatis sit voluptate eius quo autem minima id omnis nihil nam voluptatem consequatur.</p>
+                                <p>Lorem ipsum dolor sit amet. Et commodi veritatis sit voluptate eius quo autem minima id omnis nihil nam voluptatem consequatur.</p>
+                            </div>
+                        </div>    
+                    </div>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

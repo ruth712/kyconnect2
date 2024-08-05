@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile Settings</title>
+    <link rel="stylesheet" href="st_prof_settings.css">
+    <script defer src="student.js"></script>
+</head>
+<body>
+    <aside class="side sidebar">
+        <section class="pfp-display-large">
+            <figure class="pfp-container-large">
+                <img src="icons/default-pfp-icon.jpg" alt="">
+            </figure>
+            <div class="side-student-name">Student Name</div>
+        </section>
+        <nav class="side btn-container">
+            <a href="https://ruth712.github.io/kyconnect/Student%20Interface/st_dashboard.html">Dashboard</a>
+            <a href="https://ruth712.github.io/kyconnect/Student%20Interface/st_outing.html">Outing Report</a>
+            <a href="https://ruth712.github.io/kyconnect/Student%20Interface/st_prof_setting.html">Profile Settings</a>
+            <button data-modal-target="#logout-card" class="logout-btn">Log out</button>
+            <div class="logout-card" id="logout-card">
+                <h1>Do you want to log out?</h1>
+                <p>Ensure all EXEAT applications are submitted a minimum of 2 days prior to the date of leave.</p>
+                <div class="button-wrapper">
+                    <button class="yes-btn">YES</button>
+                    <button data-close-button class="no-btn">NO</button>
+                </div>
+            </div>
+            <div id="overlay"></div>        
+        </nav>
+    </aside>
+    <header>
+        <section class="pfp-display-small">
+            <figure class="pfp-container-small">
+                <img src="icons/default-pfp-icon.jpg" alt="">
+            </figure>
+            <div class="head-student-name">Student Name</div>
+        </section>
+    </header>
+    <main class="main-wrapper">
+        <section class="grid-1">
+            <figure class="pfp-container">
+                <img src="icons/default-pfp-icon.jpg" alt="">
+            </figure>
+            <div class="registration-card-1">
+                <p class="heading-block">STUDENT INFORMATION</p>
+                <div class="dropdown-block">
+                    <div class="dropdown-header">FULL NAME</div>
+                    <div class="dropdown-input">
+                        <input type="text" placeholder="Type here...">
+                    </div>
+                </div>
+                <div class="dropdown-block">
+                    <div class="dropdown-header">EMAIL</div>
+                    <div class="dropdown-input">
+                        <input type="text" placeholder="Type here...">
+                    </div>
+                </div>
+                <div class="dropdown-block">
+                    <div class="dropdown-header">CONTACT NUMBER</div>
+                    <div class="dropdown-input">
+                        <input type="text" placeholder="Type here...">
+                    </div>
+                </div>
+                <div class="column-1">
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">STUDENT ID</div>
+                        <div class="dropdown-input">
+                            <input type="text" placeholder="Type here...">
+                        </div>
+                    </div>
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">HOUSE</div>
+                        <div class="dropdown-select">
+                            <select name="accType" id="acc-type-select">
+                                <option value="houseparent">Diamond</option>
+                                <option value="teacher">Garnet</option>
+                                <option value="guard">Sapphire</option>
+                                <option value="student">Topaz</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="registration-card-2">
+            <div class="dropdown-block">
+                <div class="dropdown-header">PASSWORD</div>
+                <div class="dropdown-input">
+                    <input type="text" placeholder="Type here...">
+                </div>
+            </div>
+        </section>
+        <section class="registration-card-3">
+            <div class="guardian-card-1">
+                <div class="guardian-row-1">
+                    <p class="heading-block">GUARDIAN 1 INFORMATION</p>
+                    <div class="guardian-column">
+                        <div class="dropdown-block">
+                            <div class="dropdown-header">FULL NAME</div>
+                            <div class="dropdown-input">
+                                <input type="text" placeholder="Type here...">
+                            </div>
+                        </div>
+                        <div class="dropdown-block">
+                            <div class="dropdown-header">RELATIONSHIP</div>
+                            <div class="dropdown-select">
+                                <select name="accType" id="acc-type-select">
+                                    <option value="father">Father</option>
+                                    <option value="mother">Mother</option>
+                                    <option value="sibling">Sibling</option>
+                                    <option value="guardian">Guardian</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">EMAIL</div>
+                        <div class="dropdown-input">
+                            <input type="text" placeholder="Type here...">
+                        </div>
+                    </div>
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">CONTACT NUMBER</div>
+                        <div class="dropdown-input">
+                            <input type="text" placeholder="Type here...">
+                        </div>
+                    </div>        
+                </div>
+            </div>
+            <div class="guardian-card-2">
+                <div class="guardian-row-1">
+                    <p class="heading-block">GUARDIAN 2 INFORMATION</p>
+                    <div class="guardian-column">
+                        <div class="dropdown-block">
+                            <div class="dropdown-header">FULL NAME</div>
+                            <div class="dropdown-input">
+                                <input type="text" placeholder="Type here...">
+                            </div>
+                        </div>
+                        <div class="dropdown-block">
+                            <div class="dropdown-header">RELATIONSHIP</div>
+                            <div class="dropdown-select">
+                                <select name="accType" id="acc-type-select">
+                                    <option value="father">Father</option>
+                                    <option value="mother">Mother</option>
+                                    <option value="sibling">Sibling</option>
+                                    <option value="guardian">Guardian</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">EMAIL</div>
+                        <div class="dropdown-input">
+                            <input type="text" placeholder="Type here...">
+                        </div>
+                    </div>
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">CONTACT NUMBER</div>
+                        <div class="dropdown-input">
+                            <input type="text" placeholder="Type here...">
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </section>
+        <p class="space heading-block">LESSON BLOCKS</p>
+        <section class="registration-card-4">
+            <div class="guardian-card-1">
+                <div class="guardian-row-1">
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">BLOCK 1</div>
+                        <div class="dropdown-select">
+                            <select name="accType" id="acc-type-select">
+                                <option value="teacherName">Finley Garrett</option>
+                                <option value="teacherName">Sasha Beil</option>
+                                <option value="teacherName">Maisie Olsen</option>
+                                <option value="teacherName">Andi Reynolds</option>
+                                <option value="teacherName">None</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">BLOCK 3</div>
+                        <div class="dropdown-select">
+                            <select name="accType" id="acc-type-select">
+                                <option value="teacherName">Finley Garrett</option>
+                                <option value="teacherName">Sasha Beil</option>
+                                <option value="teacherName">Maisie Olsen</option>
+                                <option value="teacherName">Andi Reynolds</option>
+                                <option value="teacherName">None</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="dropdown-block">
+                        <div class="dropdown-header">BLOCK 5</div>
+                        <div class="dropdown-select">
+                            <select name="accType" id="acc-type-select">
+                                <option value="teacherName">Finley Garrett</option>
+                                <option value="teacherName">Sasha Beil</option>
+                                <option value="teacherName">Maisie Olsen</option>
+                                <option value="teacherName">Andi Reynolds</option>
+                                <option value="teacherName">None</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        </div>
+            <div class="guardian-card-2">
+                <div class="guardian-row-1">
+                        <div class="dropdown-block">
+                            <div class="dropdown-header">BLOCK 2</div>
+                            <div class="dropdown-select">
+                                <select name="accType" id="acc-type-select">
+                                    <option value="teacherName">Finley Garrett</option>
+                                    <option value="teacherName">Sasha Beil</option>
+                                    <option value="teacherName">Maisie Olsen</option>
+                                    <option value="teacherName">Andi Reynolds</option>
+                                    <option value="teacherName">None</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="dropdown-block">
+                            <div class="dropdown-header">BLOCK 4</div>
+                            <div class="dropdown-select">
+                                <select name="accType" id="acc-type-select">
+                                    <option value="teacherName">Finley Garrett</option>
+                                    <option value="teacherName">Sasha Beil</option>
+                                    <option value="teacherName">Maisie Olsen</option>
+                                    <option value="teacherName">Andi Reynolds</option>
+                                    <option value="teacherName">None</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="dropdown-block">
+                            <div class="dropdown-header">BLOCK 6</div>
+                            <div class="dropdown-select">
+                                <select name="accType" id="acc-type-select">
+                                    <option value="teacherName">Finley Garrett</option>
+                                    <option value="teacherName">Sasha Beil</option>
+                                    <option value="teacherName">Maisie Olsen</option>
+                                    <option value="teacherName">Andi Reynolds</option>
+                                    <option value="teacherName">None</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="save-container">
+            <button class="save-changes-btn">SAVE CHANGES</button>
+        </div>
+    </main>
+</body>
+</html>

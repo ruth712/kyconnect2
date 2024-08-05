@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Out Overlay</title>
+    <link rel="stylesheet" href="overlay.css">
+    <script defer src="student.js"></script>
+</head>
+<body>
+    <button data-modal-target="#logout-card">Log out</button>
+    <div class="logout-card" id="logout-card">
+        <h1>Do you want to log out?</h1>
+        <p>Ensure all EXEAT applications are submitted a minimum of 2 days prior to the date of leave.</p>
+        <div class="button-wrapper">
+            <button class="yes-btn">YES</button>
+            <button data-close-button class="no-btn">NO</button>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+</html>

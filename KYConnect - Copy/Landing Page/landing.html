@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Landing Page</title>
+        <meta name="viewport" content="width=device-width", initial-scale-1.0>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="landing_styles.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <section>
+            <figure>
+                <img class="ky-logo" src="icons/KYUEM Logo.png" alt="">
+            </figure>
+            <img class="landing-bg" src="images/EXEAT Landing Page.png" alt="">
+        </section>
+        <main class="registration-card">
+            <section class="sign-in-card">
+                <h1>Welcome Back!</h1>
+                <p>To register for a digital EXEAT profile please login with your personal info</p>    
+                <button class="sign-in-btn">SIGN IN</button>    
+            </section>
+            <section class="sign-up-card">
+                <h1>CREATE AN ACCOUNT</h1>
+                <div class="dropdown-block">
+                    <div class="dropdown-header">SELECT ROLE</div>
+                    <!-- Div can be replaced with <form></form> to connect to php -->
+                    <div class="dropdown-bar">
+                        <select name="accType" id="acc-type-select">
+                            <option value="houseparent">House Parent</option>
+                            <option value="teacher">Teacher</option>
+                            <option value="guard">Guard</option>
+                            <option value="student">Student</option>
+                            <option value="student">Parent</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="sign-up-btn">SIGN UP</button>
+            </section>
+        </main>
+    </body>
+</html>

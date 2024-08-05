@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+body{
+    overflow: hidden;
+}
+.landing-bg{
+    max-height: 100vh;
+    min-width: 100vw;
+    background-image: url(images/EXEAT\ Landing\ Page.png);
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+
+}
+.ky-logo{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    width: 7.5rem;
+}
+
+
+/* Full card */
+.registration-card{
+    width: 75%;
+    max-width: 1000px;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1.5fr 1.8fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+}
+
+
+/* Sign in card */
+.sign-in-card{
+    background: linear-gradient(to top, #011c80, rgb(151, 192, 254));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.sign-in-card h1, p{
+    color: white;
+}
+.sign-in-card h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+.sign-in-card p{
+    margin-top: 20px;
+    width: 80%;
+    font-size: 14px;
+}
+.sign-in-btn{
+    margin-top: 40px;
+    width: 50%;
+    max-width: 220px;
+    padding: 5px 0px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    transition: box-shadow 0.15s;
+}
+.sign-in-btn:hover{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3) inset;
+}
+.sign-in-btn:active{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7) inset;
+}
+
+
+/* Sign up card window */
+.sign-up-card{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown-block{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding-top: 40px;
+}
+.dropdown-header{
+    width: fit-content;
+    background-color: #001254;
+    color: white;
+    font-weight: bold;
+    padding: 3px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+}
+.dropdown-bar{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(237, 237, 237);
+    color: grey;
+    border-radius: 0 10px 10px 10px;
+}
+#acc-type-select{
+    padding-left: 1rem;
+    width: 100%;
+    border: none;
+    background-color: rgb(237, 237, 237);
+    font-size: 14px;
+    font-weight: 500;
+    padding-right: 15px;
+    border-right: 11px solid transparent;
+    border-radius: 0 10px 10px 10px;
+}
+.sign-up-btn{
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 40px;
+    width: 50%;
+    max-width: 220px;
+    padding: 5px 0px;
+    color: white;
+    background-color: #001254;
+    transition: opacity 0.15s;
+}
+.sign-up-btn:hover{
+    background-color: #001254;
+    opacity: 0.9;
+}
+.sign-up-btn:active{
+    background-color: #001254;
+    opacity: 1;
+}
