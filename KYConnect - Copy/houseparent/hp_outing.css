@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+
+/* Sidebar */
+aside {
+    z-index: 100;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 12rem;
+    background-color: rgb(10, 10, 10);
+}
+.side a,div,p{
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+}
+.pfp-display-large{
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding: 1.4rem 1.5rem;
+}
+.pfp-container-large{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+.pfp-container-large img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.side-student-name{
+    padding-left: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Sidebar Navigation */
+.btn-container{
+    padding-top: 0.6rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+}
+.btn-container a{
+    text-decoration: none;
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 100%;
+    padding: 0 0.8rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px black inset;
+    transition: background-color 0.15s;
+}
+.btn-container a:hover{
+    background-color: rgba(30, 30, 30, 0.5);
+}
+.btn-container a:active{
+    background-color: rgba(30, 30, 30, 0.2);
+}
+
+
+/* Header Display */
+header{
+    position: fixed;
+    top: 0;
+    left: 12rem;
+    right: 0;
+    height: 3rem;
+    background-color: rgb(0, 18, 84);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+.pfp-display-small{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    right: 1rem;
+}
+.pfp-container-small{
+    width: 35px;
+    height: 35px;
+}
+.pfp-container-small img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.head-student-name{
+    display: flex;
+    background-color: rgb(228, 228, 228);
+    width: 12rem;
+    margin-left: 1rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+
+/*Outing status*/
+main {
+    display: flexbox;
+    width: 75vw;
+    height: auto;
+    margin: 5rem 5vw 0 25vw;
+    padding: 5px;
+    float: right;
+    font-size: 16px;
+}
+
+.outing-status-list {
+    height: auto;
+    color: white;
+    background-color: #2748bf;
+    border-radius: 10px;
+    padding: 0.5rem 0.2rem 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    width: 40%;
+    text-align: center;
+}
+
+.outing-status-approval {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.234) inset;
+    border-radius: 12px;
+    padding: 0.2rem;
+}
+.outing-status-title {
+    background-color: black;
+    margin: 1rem auto;
+    padding: 15px 0 15px 0;
+    border-radius: 10px;
+    width: 98%;
+    color: white;
+    text-align: center;
+}
+
+.outing-status-search-bar {
+    display: flexbox;
+    margin: 0.35rem auto;
+    text-align: center;
+}
+
+.search-button {
+    border: none;
+    background-color: white;
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+
+.search-button:hover {
+    cursor: pointer;
+}
+
+.search-button img {
+    height: 1.1rem;
+    width: 1.1rem;
+}
+
+.outing-status-search-bar input[type=text] {
+    color: black;
+    background-color: #efefef;
+    height:1.5rem;
+    width: 50%;
+    border: none;
+    border-radius: 10px;
+    padding: 0.15rem 0 0.15rem 0.6rem;
+    vertical-align: middle;
+}
+
+table {
+    color: black;
+    border-collapse: collapse;
+    margin: 0.8rem auto;
+    width: 98%;
+}
+
+
+th {
+    padding: 0.5rem 2rem 0.5rem 0.1rem;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+}
+
+td {
+    color: black;
+    padding: 0.15rem 0.4rem;
+}
+
+td:nth-child(even){
+    background-color: white;
+}
+
+td:nth-child(odd){
+    background-color: rgb(242, 242, 242);
+}
+
+td:hover{
+    background-color: rgb(255, 235, 245);
+}
+
