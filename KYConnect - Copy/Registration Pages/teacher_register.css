@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+body{
+    height: min-content;
+}
+
+
+/* Log Out Overlay */
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.logout-card{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    background-color: white;
+    color: black;
+    width: 480px;
+    height: 280px;
+    max-width: 80%;
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+}
+.logout-card.active{
+    transform: translate(-50%, -50%) scale(1);  
+}
+.logout-card h1, .logout-card p{
+    width: 400px;
+    max-width: 80%;
+    color: black;
+}
+.logout-card h1{
+    font-size: 30px;
+}
+.button-wrapper{
+    width: 215px;
+    display: flex;
+    justify-content: space-between;
+}
+.button-wrapper button{
+    width: 6.2rem;
+    padding: 0.4rem 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.yes-btn{
+    border: none;
+    background-color: rgb(26, 188, 120);
+    color: white;
+    transition: opacity 0.15s;
+}
+.yes-btn:hover{
+    opacity: 0.9;
+}
+.yes-btn:active{
+    opacity: 0.7;
+}
+.no-btn{
+    border: 1px rgb(229, 25, 25) solid;
+    color: rgb(229, 25, 25);
+    background-color: white;
+    transition: background-color 0.15s;
+}
+.no-btn:hover{
+    color: white;
+    background-color: rgb(229, 25, 25);
+}
+.no-btn:active{
+    background-color: rgba(229, 25, 25, 0.7);
+}
+
+/* Main Panel */
+.main-wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: top;
+    top: 33rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+.heading-block, .dropdown-header{
+    color: white;
+    font-weight: 600;
+}
+/* Top grid */
+.grid-1{
+    display: grid;
+    grid-template-columns: 112px 1fr;
+    gap: 2rem;
+}
+.pfp-container{
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+    border: 1px rgb(18, 18, 18) solid;
+}
+.pfp-container img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100px;
+}
+.registration-card-1{
+    display: grid;
+    grid-template-rows: min-content auto;
+    gap: 1rem;
+}
+.heading-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 3px 0;
+    background-color: rgb(18, 18, 18);
+    border: none;
+    border-radius: 50px;
+}
+.space{
+    margin-top: 2rem;
+}
+.dropdown-block{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.pad{
+    margin-bottom: 1rem;
+}
+.dropdown-header{
+    width: fit-content;
+    background-color: #001254;
+    color: white;
+    font-weight: bold;
+    padding: 2px 15px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 10px 10px 0 0;
+}
+.dropdown-input, .dropdown-select{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: rgb(237, 237, 237);
+    color: grey;
+    border-radius: 0 10px 10px 10px;
+}
+.dropdown-input input{
+    border: none;
+    background-color: inherit;
+    width: 100%;
+    padding: 2px 15px;
+    border-radius: 0 10px 10px 10px;
+}
+#acc-type-select{
+    padding: 2px 10px;
+    width: 100%;
+    border: none;
+    background-color: rgb(237, 237, 237);
+    font-size: 14px;
+    font-weight: 500;
+    border-right: 11px solid transparent;
+    border-radius: 0 10px 10px 10px;
+}
+
+/* Section 2 */
+.registration-card-2{
+    margin-top: 1rem;
+}
+
+/* Section 3,4 */
+.registration-card-3, .registration-card-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.registration-card-3{
+    margin-top: 2rem;
+}
+.registration-card-4{
+    margin-top: 1rem;
+}
+.guardian-row-1{
+    display: grid;
+    grid-template-rows: min-content auto;
+    gap: 1rem;
+}
+.guardian-column{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* Save button */
+.save-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.save-changes-btn{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    background-color: rgb(229, 25, 25);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 4px 0;
+    width: 240px;
+    font-weight: 600;
+}
+.save-changes-btn:hover{
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.315);
+}
+.save-changes-btn:active{
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.315) inset;
+}
