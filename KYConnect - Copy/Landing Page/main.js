@@ -6,13 +6,13 @@ function redirectToRolePage() {
     let url = '';
     switch(selectedRole) {
         case 'houseparent':
-            url = 'houseparent_page.html';
+            url = 'https://ruth712.github.io/kyconnect2/KYConnect%20-%20Copy/Registration%20Pages/houseparent_register.html';
             break;
         case 'teacher':
-            url = 'teacher_page.html';
+            url = 'https://ruth712.github.io/kyconnect2/KYConnect%20-%20Copy/Registration%20Pages/teacher_register.html';
             break;
         case 'guard':
-            url = 'guard_page.html';
+            url = 'https://ruth712.github.io/kyconnect2/KYConnect%20-%20Copy/Registration%20Pages/guard_register.html';
             break;
         case 'student':
             url = 'https://ruth712.github.io/kyconnect2/KYConnect%20-%20Copy/Student%20Interface/st_dashboard.html';
