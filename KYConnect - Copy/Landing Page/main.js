@@ -1,4 +1,4 @@
-Sfunction redirectToRolePage() {
+function redirectToRolePage() {
     // Get the selected value from the dropdown
     const selectedRole = document.getElementById('acc-type-select').value;
 
