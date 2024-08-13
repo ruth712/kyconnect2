@@ -1,4 +1,4 @@
-function redirectToRolePage() {
+Sfunction redirectToRolePage() {
     // Get the selected value from the dropdown
     const selectedRole = document.getElementById('acc-type-select').value;
 
@@ -15,7 +15,7 @@ function redirectToRolePage() {
             url = 'https://ruth712.github.io/kyconnect2/KYConnect%20-%20Copy/Registration%20Pages/guard_register.html';
             break;
         case 'student':
-            url = 'https://ruth712.github.io/kyconnect2/KYConnect%20-%20Copy/Student%20Interface/st_dashboard.html';
+            url = 'https://ruth712.github.io/kyconnect2/KYConnect%20-%20Copy/Student%20Interface/student_register.html';
             break;
         case 'parent':
             url = 'parent_page.html';
