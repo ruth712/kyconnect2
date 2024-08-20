@@ -1,3 +1,8 @@
+<?php
+require_once 'includes/signup_student_view.inc.php';
+require_once 'includes/config_session.inc.php'
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,32 +23,32 @@
                 <div class="dropdown-block">
                     <div class="dropdown-header">FULL NAME</div>
                     <div class="dropdown-input">
-                        <input method="POST" name="full_name" type="text" placeholder="Type here...">
+                        <input action="includes/signup_student.inc.php" method="POST" name="full_name" type="text" placeholder="Type here...">
                     </div>
                 </div>
                 <div class="dropdown-block">
                     <div class="dropdown-header">EMAIL</div>
                     <div class="dropdown-input">
-                        <input  method="POST" name="student_email" type="text" placeholder="Type here...">
+                        <input action="includes/signup_student.inc.php" method="POST" name="student_email" type="text" placeholder="Type here...">
                     </div>
                 </div>
                 <div class="dropdown-block">
                     <div class="dropdown-header">CONTACT NUMBER</div>
                     <div class="dropdown-input">
-                        <input method="POST" name="contact_number" type="text" placeholder="Type here...">
+                        <input action="includes/signup_student.inc.php" method="POST" name="contact_number" type="text" placeholder="Type here...">
                     </div>
                 </div>
                 <div class="column-1">
                     <div class="dropdown-block">
                         <div class="dropdown-header">STUDENT ID</div>
                         <div class="dropdown-input">
-                            <input method="POST" name="student_id" type="text" placeholder="Type here...">
+                            <input action="includes/signup_student.inc.php" method="POST" name="student_id" type="text" placeholder="Type here...">
                         </div>
                     </div>
                     <div class="dropdown-block">
                         <div class="dropdown-header">HOUSE</div>
                         <div class="dropdown-select">
-                            <select method="POST" name="house" id="acc-type-select">
+                            <select action="includes/signup_student.inc.php" method="POST" name="house" id="acc-type-select">
                                 <option value="houseparent">Diamond</option>
                                 <option value="teacher">Garnet</option>
                                 <option value="guard">Sapphire</option>
@@ -58,7 +63,7 @@
             <div class="dropdown-block">
                 <div class="dropdown-header">PASSWORD</div>
                 <div class="dropdown-input">
-                    <input method="POST" name="pwd" type="text" placeholder="Type here...">
+                    <input action="includes/signup_student.inc.php" method="POST" name="pwd" type="text" placeholder="Type here...">
                 </div>
             </div>
         </section>
@@ -68,15 +73,15 @@
                     <p class="heading-block">GUARDIAN 1 INFORMATION</p>
                     <div class="guardian-column">
                         <div class="dropdown-block">
-                            <div method="POST" name="guardian1_full_name" class="dropdown-header">FULL NAME</div>
+                            <div class="dropdown-header">FULL NAME</div>
                             <div class="dropdown-input">
-                                <input type="text" placeholder="Type here...">
+                                <input action="includes/signup_student.inc.php" method="POST" name="guardian1_full_name" type="text" placeholder="Type here...">
                             </div>
                         </div>
                         <div class="dropdown-block">
                             <div class="dropdown-header">RELATIONSHIP</div>
                             <div class="dropdown-select">
-                                <select method="POST" name="guardian1_relationship" id="acc-type-select">
+                                <select action="includes/signup_student.inc.php" method="POST" name="guardian1_relationship" id="acc-type-select">
                                     <option value="father">Father</option>
                                     <option value="mother">Mother</option>
                                     <option value="sibling">Sibling</option>
@@ -88,13 +93,13 @@
                     <div class="dropdown-block">
                         <div class="dropdown-header">EMAIL</div>
                         <div class="dropdown-input">
-                            <input method="POST" name="guardian1_email" type="text" placeholder="Type here...">
+                            <input action="includes/signup_student.inc.php" method="POST" name="guardian1_email" type="text" placeholder="Type here...">
                         </div>
                     </div>
                     <div class="dropdown-block">
                         <div class="dropdown-header">CONTACT NUMBER</div>
                         <div class="dropdown-input">
-                            <input method="POST" name="guardian1_contact_number" type="text" placeholder="Type here...">
+                            <input action="includes/signup_student.inc.php" method="POST" name="guardian1_contact_number" type="text" placeholder="Type here...">
                         </div>
                     </div>        
                 </div>
@@ -106,13 +111,13 @@
                         <div class="dropdown-block">
                             <div class="dropdown-header">FULL NAME</div>
                             <div class="dropdown-input">
-                                <input method="POST" name="guardian2_full_name" type="text" placeholder="Type here...">
+                                <input action="includes/signup_student.inc.php" method="POST" name="guardian2_full_name" type="text" placeholder="Type here...">
                             </div>
                         </div>
                         <div class="dropdown-block">
                             <div class="dropdown-header">RELATIONSHIP</div>
                             <div class="dropdown-select">
-                                <select method="POST" name="guardian2_relationship" id="acc-type-select">
+                                <select action="includes/signup_student.inc.php" method="POST" name="guardian2_relationship" id="acc-type-select">
                                     <option value="father">Father</option>
                                     <option value="mother">Mother</option>
                                     <option value="sibling">Sibling</option>
@@ -124,13 +129,13 @@
                     <div class="dropdown-block">
                         <div class="dropdown-header">EMAIL</div>
                         <div class="dropdown-input">
-                            <input method="POST" name="guardian2_email" type="text" placeholder="Type here...">
+                            <input action="includes/signup_student.inc.php" method="POST" name="guardian2_email" type="text" placeholder="Type here...">
                         </div>
                     </div>
                     <div class="dropdown-block">
                         <div class="dropdown-header">CONTACT NUMBER</div>
                         <div class="dropdown-input">
-                            <input method="POST" name="guardian2_contact_number" type="text" placeholder="Type here...">
+                            <input action="includes/signup_student.inc.php" method="POST" name="guardian2_contact_number" type="text" placeholder="Type here...">
                         </div>
                     </div>        
                 </div>
@@ -143,7 +148,7 @@
                     <div class="dropdown-block">
                         <div class="dropdown-header">BLOCK 1</div>
                         <div class="dropdown-select">
-                            <select method="POST" name="block1" id="acc-type-select">
+                            <select action="includes/signup_student.inc.php" method="POST" name="block1" id="acc-type-select">
                                 <option value="teacherName">Finley Garrett</option>
                                 <option value="teacherName">Sasha Beil</option>
                                 <option value="teacherName">Maisie Olsen</option>
@@ -155,7 +160,7 @@
                     <div class="dropdown-block">
                         <div class="dropdown-header">BLOCK 3</div>
                         <div class="dropdown-select">
-                            <select method="POST" name="block3" id="acc-type-select">
+                            <select action="includes/signup_student.inc.php" method="POST" name="block3" id="acc-type-select">
                                 <option value="teacherName">Finley Garrett</option>
                                 <option value="teacherName">Sasha Beil</option>
                                 <option value="teacherName">Maisie Olsen</option>
@@ -167,7 +172,7 @@
                     <div class="dropdown-block">
                         <div class="dropdown-header">BLOCK 5</div>
                         <div class="dropdown-select">
-                            <select method="POST" name="block5" id="acc-type-select">
+                            <select action="includes/signup_student.inc.php" method="POST" name="block5" id="acc-type-select">
                                 <option value="teacherName">Finley Garrett</option>
                                 <option value="teacherName">Sasha Beil</option>
                                 <option value="teacherName">Maisie Olsen</option>
@@ -183,7 +188,7 @@
                         <div class="dropdown-block">
                             <div class="dropdown-header">BLOCK 2</div>
                             <div class="dropdown-select">
-                                <select method="POST" name="block2" id="acc-type-select">
+                                <select action="includes/signup_student.inc.php" method="POST" name="block2" id="acc-type-select">
                                     <option value="teacherName">Finley Garrett</option>
                                     <option value="teacherName">Sasha Beil</option>
                                     <option value="teacherName">Maisie Olsen</option>
@@ -195,7 +200,7 @@
                         <div class="dropdown-block">
                             <div class="dropdown-header">BLOCK 4</div>
                             <div class="dropdown-select">
-                                <select method="POST" name="block4" id="acc-type-select">
+                                <select action="includes/signup_student.inc.php" method="POST" name="block4" id="acc-type-select">
                                     <option value="teacherName">Finley Garrett</option>
                                     <option value="teacherName">Sasha Beil</option>
                                     <option value="teacherName">Maisie Olsen</option>
@@ -207,7 +212,7 @@
                         <div class="dropdown-block">
                             <div class="dropdown-header">BLOCK 6</div>
                             <div class="dropdown-select">
-                                <select method="POST" name="block6" id="acc-type-select">
+                                <select action="includes/signup_student.inc.php" method="POST" name="block6" id="acc-type-select">
                                     <option value="teacherName">Finley Garrett</option>
                                     <option value="teacherName">Sasha Beil</option>
                                     <option value="teacherName">Maisie Olsen</option>
@@ -220,8 +225,14 @@
                 </div>
             </div>
         </section>
+        <?php
+        check_signup_errors();
+        ?>
         <div class="save-container">
-            <button class="save-changes-btn">REGISTER NOW</button>
+            <?php
+            signup_inputs();
+            ?>
+            <button action="includes/signup_student.inc.php" class="save-changes-btn">REGISTER NOW</button>
         </div>
     </main>
 </body>
